@@ -1,0 +1,4 @@
+--------------------banner start--------------------
+${spring-boot.version}
+${spring-boot.formatted-version}
+---------------------banner end---------------------

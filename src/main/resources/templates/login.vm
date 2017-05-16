@@ -1,0 +1,16 @@
+<script>
+    $(function () {
+        $("#signIn").on("click", function () {
+            $("#loginForm").submit();
+        })
+    })
+</script>
+<div class="page-content">
+    <div class="login-panel">
+        <form id="loginForm" action="/login" method="post">
+            账号：<input type="text" name="userName" value=""/>
+            密码：<input type="password" name="password" value=""/>
+            <input type="button" class="btn btn-primary" id="signIn" value="登录"/>
+        </form>
+    </div>
+</div>

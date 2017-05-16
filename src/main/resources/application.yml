@@ -1,0 +1,27 @@
+server:
+    port: 8001
+    session:
+      timeout: 6000 #second
+
+spring:
+    aop:
+      auto: true
+      proxy-target-class: true
+    main:
+      banner-mode: "console"         #banner打印的位置，可选参数（console, log, off）
+    mvc:
+      view:
+        suffix: .vm
+        prefix: classpath:/templates/
+    devtools:
+      restart:
+        exclude: templates
+        enabled: true
+        trigger-file: classpath:/restart-trigger.xml
+      livereload:
+        enabled: false
+
+#        自定义banner
+banner:
+  charset: UTF-8
+  location: classpath:/banner.txt
