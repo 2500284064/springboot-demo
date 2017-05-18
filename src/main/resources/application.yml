@@ -9,10 +9,33 @@ spring:
       proxy-target-class: true
     main:
       banner-mode: "console"         #banner打印的位置，可选参数（console, log, off）
-    mvc:
-      view:
-        suffix: .vm
-        prefix: classpath:/templates/
+
+#    mvc:
+#      view:
+#        suffix: .vm
+#        prefix: classpath:/templates/
+
+    thymeleaf:
+      cache: false
+      prefix: classpath:/templates/
+      suffix: .html
+      mode: HTML5
+      excluded-view-names:
+      encoding: UTF-8
+      enabled: true
+      content-type: text/html
+      check-template-location: true
+
+    velocity:
+      cache: false
+      charset: UTF-8
+      expose-spring-macro-helpers: true
+      properties:
+        velocimacro.library: macro/macro.vm
+        velocimacro.library.autoreload: true
+      resource-loader-path: classpath:/templates/
+      suffix: .vm
+
     devtools:
       restart:
         exclude: templates

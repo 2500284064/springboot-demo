@@ -18,6 +18,11 @@ public class IndexController {
         return "login";
     }
 
+    @RequestMapping(value = "/thymeleaf", method = RequestMethod.GET)
+    public String thymeleaf(){
+        return "thymeleafIndex";
+    }
+
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String signIn(String userName, String password){
         if(USER_NAME.equals(userName) && PASSWORD.equals(password))
