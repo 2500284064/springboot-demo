@@ -1,5 +1,8 @@
 package com.example.controller;
 
+import com.example.db.entity.User;
+import com.example.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -9,6 +12,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class IndexController {
+
+    @Autowired
+    private UserService userService;
 
     private static final String USER_NAME = "ftz";
     private static final String PASSWORD = "1234";
@@ -25,7 +31,8 @@ public class IndexController {
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String signIn(String userName, String password){
-        if(USER_NAME.equals(userName) && PASSWORD.equals(password))
+        User user = userService.selectUserByUserName(userName);
+        if(password.equals(user.getPassword()))
             return "index";
         return "error";
     }

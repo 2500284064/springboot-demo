@@ -1,26 +1,20 @@
 package com.example;
 
-import org.springframework.boot.*;
-import org.springframework.boot.autoconfigure.*;
-import org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext;
+import org.springframework.boot.Banner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.env.Environment;
-import org.springframework.stereotype.*;
-import org.springframework.web.bind.annotation.*;
-
-import java.io.PrintStream;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableAutoConfiguration
 @ComponentScan(basePackages = "com.example")    //此时由于主类在根目录下，所以默认的扫描目录即为com.example目录
-@RestController
-public class ApiStarter {
+//上面三个注解可用@SpringBootApplication代替
 
-    @RequestMapping("/")
-    String home() {
-        return "Hello Worldddd!";
-    }
+//@MapperScan(value = "com.example.db.mapper")        此注解被MapperScannerConfig类替代
+@EnableTransactionManagement(proxyTargetClass = true)
+public class ApiStarter {
 
     public static void main(String[] args) throws Exception {
         System.setProperty("spring.devtools.restart.enabled", "true");

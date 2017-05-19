@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="springbootdemo" uuid="94f07375-b789-4cf7-96e2-a16cc8fa87f9">
+    <database-info product="Oracle" version="Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production&#xa;With the Partitioning, OLAP, Data Mining and Real Application Testing options" jdbc-version="4.0" driver-name="Oracle JDBC driver" driver-version="12.1.0.2.0">
+      <extra-name-characters>$#</extra-name-characters>
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="ORACLE" format-version="2.6">
+      <schema id="1" name="SPRINGBOOTDEMO">
+        <object-id>92</object-id>
+        <created-timestamp>2017-05-19.17:19:19</created-timestamp>
+        <modified-timestamp>2017-05-19.17:19:19</modified-timestamp>
+        <visible>1</visible>
+        <introspection-timestamp>2017-05-19.17:19:20</introspection-timestamp>
+      </schema>
+      <schema id="2" name="PUBLIC">
+        <object-id>1</object-id>
+      </schema>
+      <schema id="3" name="SYS"/>
+      <schema id="4" name="SYSTEM">
+        <object-id>5</object-id>
+      </schema>
+      <schema id="5" name="OUTLN">
+        <object-id>9</object-id>
+      </schema>
+      <schema id="6" name="DIP">
+        <object-id>14</object-id>
+      </schema>
+      <schema id="7" name="ORACLE_OCM">
+        <object-id>21</object-id>
+      </schema>
+      <schema id="8" name="DBSNMP">
+        <object-id>30</object-id>
+      </schema>
+      <schema id="9" name="APPQOSSYS">
+        <object-id>31</object-id>
+      </schema>
+      <schema id="10" name="WMSYS">
+        <object-id>32</object-id>
+      </schema>
+      <schema id="11" name="EXFSYS">
+        <object-id>42</object-id>
+      </schema>
+      <schema id="12" name="CTXSYS">
+        <object-id>43</object-id>
+      </schema>
+      <schema id="13" name="XDB">
+        <object-id>45</object-id>
+      </schema>
+      <schema id="14" name="ANONYMOUS">
+        <object-id>46</object-id>
+      </schema>
+      <schema id="15" name="ORDSYS">
+        <object-id>53</object-id>
+      </schema>
+      <schema id="16" name="ORDDATA">
+        <object-id>54</object-id>
+      </schema>
+      <schema id="17" name="ORDPLUGINS">
+        <object-id>55</object-id>
+      </schema>
+      <schema id="18" name="SI_INFORMTN_SCHEMA">
+        <object-id>56</object-id>
+      </schema>
+      <schema id="19" name="MDSYS">
+        <object-id>57</object-id>
+      </schema>
+      <schema id="20" name="OLAPSYS">
+        <object-id>61</object-id>
+      </schema>
+      <schema id="21" name="MDDATA">
+        <object-id>65</object-id>
+      </schema>
+      <schema id="22" name="SPATIAL_WFS_ADMIN_USR">
+        <object-id>67</object-id>
+      </schema>
+      <schema id="23" name="SPATIAL_CSW_ADMIN_USR">
+        <object-id>70</object-id>
+      </schema>
+      <schema id="24" name="SYSMAN">
+        <object-id>72</object-id>
+      </schema>
+      <schema id="25" name="MGMT_VIEW">
+        <object-id>74</object-id>
+      </schema>
+      <schema id="26" name="FLOWS_FILES">
+        <object-id>75</object-id>
+      </schema>
+      <schema id="27" name="APEX_PUBLIC_USER">
+        <object-id>76</object-id>
+      </schema>
+      <schema id="28" name="APEX_030200">
+        <object-id>78</object-id>
+      </schema>
+      <schema id="29" name="OWBSYS">
+        <object-id>79</object-id>
+      </schema>
+      <schema id="30" name="OWBSYS_AUDIT">
+        <object-id>83</object-id>
+      </schema>
+      <schema id="31" name="SCOTT">
+        <object-id>84</object-id>
+      </schema>
+      <schema id="32" name="HR">
+        <object-id>85</object-id>
+      </schema>
+      <schema id="33" name="OE">
+        <object-id>86</object-id>
+      </schema>
+      <schema id="34" name="IX">
+        <object-id>87</object-id>
+      </schema>
+      <schema id="35" name="SH">
+        <object-id>88</object-id>
+      </schema>
+      <schema id="36" name="PM">
+        <object-id>89</object-id>
+      </schema>
+      <schema id="37" name="BI">
+        <object-id>90</object-id>
+      </schema>
+      <schema id="38" name="FENGTANGZHENG">
+        <object-id>91</object-id>
+      </schema>
+      <schema id="39" name="XS$NULL">
+        <object-id>2147483638</object-id>
+      </schema>
+      <table id="40" parent="1" name="SYS_USER">
+        <object-id>76015</object-id>
+        <created-timestamp>2017-05-19.17:19:19</created-timestamp>
+        <modified-timestamp>2017-05-19.17:19:19</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <column id="41" parent="40" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>VARCHAR2(36)|0</data-type>
+      </column>
+      <column id="42" parent="40" name="USER_KEY">
+        <comment>登录ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>VARCHAR2(40)|0</data-type>
+      </column>
+      <column id="43" parent="40" name="USER_NAME">
+        <comment>登录名</comment>
+        <mandatory>1</mandatory>
+        <data-type>VARCHAR2(40)|0</data-type>
+      </column>
+      <column id="44" parent="40" name="PASSWORD">
+        <comment>登录密码</comment>
+        <mandatory>1</mandatory>
+        <data-type>VARCHAR2(40)|0</data-type>
+      </column>
+      <column id="45" parent="40" name="PERSON_NAME">
+        <comment>用户名字</comment>
+        <data-type>VARCHAR2(20)|0</data-type>
+      </column>
+      <column id="46" parent="40" name="IDCARD">
+        <comment>身份证号</comment>
+        <data-type>VARCHAR2(18)|0</data-type>
+      </column>
+      <column id="47" parent="40" name="SEX">
+        <comment>性别</comment>
+        <data-type>VARCHAR2(4)|0</data-type>
+      </column>
+      <column id="48" parent="40" name="BIRTHDATE">
+        <comment>出生日期</comment>
+        <data-type>DATE|0</data-type>
+      </column>
+      <column id="49" parent="40" name="PHONE">
+        <comment>出生日期</comment>
+        <data-type>VARCHAR2(13)|0</data-type>
+      </column>
+      <column id="50" parent="40" name="EMAIL">
+        <comment>出生日期</comment>
+        <data-type>VARCHAR2(50)|0</data-type>
+      </column>
+      <column id="51" parent="40" name="REGISTER_DATE">
+        <comment>登记日期</comment>
+        <data-type>DATE|0</data-type>
+      </column>
+      <column id="52" parent="40" name="STOP_SIGN">
+        <comment>是否停用</comment>
+        <data-type>VARCHAR2(2)|0</data-type>
+      </column>
+      <column id="53" parent="40" name="DEL_SIGN">
+        <comment>是否被删除</comment>
+        <data-type>VARCHAR2(2)|0</data-type>
+      </column>
+      <column id="54" parent="40" name="IMAGE">
+        <comment>头像</comment>
+        <data-type>VARCHAR2(500)|0</data-type>
+      </column>
+      <index id="55" parent="40" name="SYS_C0012082">
+        <name-surrogate>1</name-surrogate>
+        <object-id>76016</object-id>
+        <created-timestamp>2017-05-19.17:19:19</created-timestamp>
+        <modified-timestamp>2017-05-19.17:19:19</modified-timestamp>
+        <columns>ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <tablespace-name>USERS</tablespace-name>
+      </index>
+      <key id="56" parent="40" name="SYS_C0012082">
+        <name-surrogate>1</name-surrogate>
+        <modified-timestamp>2017-05-19.17:19:19</modified-timestamp>
+        <columns>ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <underlying-index>SYS_C0012082</underlying-index>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>

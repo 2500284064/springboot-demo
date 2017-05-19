@@ -10,6 +10,13 @@ spring:
     main:
       banner-mode: "console"         #banner打印的位置，可选参数（console, log, off）
 
+#      配置datasource
+    datasource:
+      url: jdbc:oracle:thin:@localhost:1521:orcl
+      username: springbootdemo
+      password: fengtangzheng
+      driver-class-name: oracle.jdbc.driver.OracleDriver
+
 #    mvc:
 #      view:
 #        suffix: .vm
@@ -48,3 +55,8 @@ spring:
 banner:
   charset: UTF-8
   location: classpath:/banner.txt
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.db.entity
