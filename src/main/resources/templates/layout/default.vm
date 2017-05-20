@@ -11,6 +11,8 @@
     <title>spring-boot+velocity demo</title>
 
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/css/login.css" />
 
     <script src="/assets/js/jquery.2.1.1.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
@@ -18,12 +20,12 @@
 
 <body>
     <header>
-        头部
+        #parse("/common/header.vm")
     </header>
     <div class="main-container">
         $screen_content
     </div>
     <footer>
-
+        #parse("/common/footer.vm")
     </footer>
 </body>

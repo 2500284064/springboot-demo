@@ -1,0 +1,13 @@
+.login-panel {
+    width: 400px;
+    padding-top: 100px;
+    text-align: center;
+    margin: auto;
+    height: 300px;
+}
+
+.login-panel input {
+    height: 32px;
+    width: 240px;
+    margin-top: 10px;
+}
