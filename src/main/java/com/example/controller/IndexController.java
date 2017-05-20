@@ -2,6 +2,9 @@ package com.example.controller;
 
 import com.example.db.entity.User;
 import com.example.service.UserService;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,10 +36,16 @@ public class IndexController {
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String signIn(String userName, String password){
-        User user = userService.selectUserByUserName(userName);
-        if(user != null && user.getPassword().equals(password)){
-            return "redirect:/index";
+
+        Subject subject = SecurityUtils.getSubject() ;
+        UsernamePasswordToken token = new UsernamePasswordToken(userName, password) ;
+        try {
+            subject.login(token);
+            return "redirect:/index" ;
+        }catch (Exception e) {
+            //这里将异常打印关闭是因为如果登录失败的话会自动抛异常
+//            e.printStackTrace();
+            return "login";
         }
-        return "error";
     }
 }

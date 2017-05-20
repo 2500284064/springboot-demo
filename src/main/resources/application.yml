@@ -60,3 +60,4 @@ banner:
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.example.db.entity
+  config-location: classpath:mybatis-config.xml

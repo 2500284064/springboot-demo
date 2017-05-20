@@ -235,5 +235,7 @@
     <include refid="Base_Column_List" />
     FROM SYS_USER
     WHERE USER_NAME = #{userName}
+    AND STOP_SIGN = '0'
+    AND DEL_SIGN = '0'
   </select>
 </mapper>
