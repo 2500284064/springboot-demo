@@ -24,6 +24,11 @@ public class IndexController {
         return "login";
     }
 
+    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    public String index(){
+        return "index";
+    }
+
     @RequestMapping(value = "/thymeleaf", method = RequestMethod.GET)
     public String thymeleaf(){
         return "thymeleafIndex";
@@ -32,8 +37,9 @@ public class IndexController {
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String signIn(String userName, String password){
         User user = userService.selectUserByUserName(userName);
-        if(password.equals(user.getPassword()))
-            return "index";
+        if(user != null && user.getPassword().equals(password)){
+            return "redirect:/index";
+        }
         return "error";
     }
 }
