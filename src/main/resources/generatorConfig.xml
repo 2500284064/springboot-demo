@@ -42,10 +42,10 @@
 	    <!-- <ignoreColumn column="FRED" />   -->
 	    
 	    <!-- 指定列的java数据类型 -->  
-	    <!-- <columnOverride column="LONG_VARCHAR_FIELD" jdbcType="VARCHAR" />   --> 
+	    <!-- <columnOverride column="LONG_VARCHAR_FIELD" jdbcType="VARCHAR" />   -->
 
-    <table  tableName="sys_user"  domainObjectName="User" enableCountByExample="false"
-        enableDeleteByExample="false" enableSelectByExample="false"  enableUpdateByExample="false" >  
+    <table  tableName="sys_right"  domainObjectName="Right" enableCountByExample="false"
+            enableDeleteByExample="false" enableSelectByExample="false"  enableUpdateByExample="false" >
     </table>
 
   </context>

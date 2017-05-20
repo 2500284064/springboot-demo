@@ -16,9 +16,6 @@ public class IndexController {
     @Autowired
     private UserService userService;
 
-    private static final String USER_NAME = "ftz";
-    private static final String PASSWORD = "1234";
-
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String login(){
         return "login";
