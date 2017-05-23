@@ -8,7 +8,8 @@
 <div class="page-content" style="background-image: url('/assets/images/earth-banner.jpg'); background-repeat: no-repeat; height: 415px">
     <div class="login-panel">
         <form id="loginForm" action="/login" method="post">
-            <input type="text" name="userName" value="" placeholder="账号"/>
+            <div class="errorMsg">$!{errorMsg}</div>
+            <input type="text" name="username" value="" placeholder="账号"/>
             <input type="password" name="password" value="" placeholder="密码"/>
             <input type="button" class="btn btn-primary btn-sm" id="signIn" value="登录"/>
         </form>

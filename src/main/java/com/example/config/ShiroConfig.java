@@ -33,19 +33,32 @@ import java.util.Map;
 public class ShiroConfig {
     private static Logger logger = LoggerFactory.getLogger(ShiroConfig.class);
 
+    /**
+     * Shiro的Web过滤器Factory 命名:shiroFilter<br />
+     * *  @param securityManager
+     * * @return
+     */
     @Bean(name = "shiroFilter")
     public ShiroFilterFactoryBean shiroFilter() {
 
         ShiroFilterFactoryBean shiroFilter = new ShiroFilterFactoryBean();
+        //Shiro的核心安全接口,这个属性是必须的
+        shiroFilter.setSecurityManager(securityManager());
+        /*要求登录时的链接(可根据项目的URL进行替换),非必须的属性,默认会自动寻找Web工程根目录下的"/login.jsp"页面*/
         shiroFilter.setLoginUrl("/login");
+        /*登录成功页面*/
         shiroFilter.setSuccessUrl("/index");
+        /*无权限转页面*/
         shiroFilter.setUnauthorizedUrl("/forbidden");
+
+        /*定义shiro过滤链 Map结构 * Map中key(xml中是指value值)的第一个'/'代表
+        的路径是相对于HttpServletRequest.getContextPath()的值来的
+        *anon：它对应的过滤器里面是空的,什么都没做,这里.do和.jsp后面的*表示参数,比方说login.jsp?main这种
+        * authc：该过滤器下的页面必须验证后才能访问,它是Shiro内置的一个拦截器org.apache.shiro.web.filter.authc.FormAuthenticationFilter */
         Map<String, String> filterChainDefinitionMapping = new HashMap<String, String>();
         filterChainDefinitionMapping.put("/favicon.ico", "anon");
         filterChainDefinitionMapping.put("/forbidden", "anon");
         filterChainDefinitionMapping.put("/assets/**", "anon");
-        filterChainDefinitionMapping.put("/swagger-resources/**", "anon");
-        filterChainDefinitionMapping.put("/swagger-ui.html", "anon");
         filterChainDefinitionMapping.put("/webjars/**", "anon");
         filterChainDefinitionMapping.put("/v2/api-docs", "anon");
 
@@ -54,8 +67,9 @@ public class ShiroConfig {
         filterChainDefinitionMapping.put("/mislogin", "anon");
 //        filterChainDefinitionMapping.put("/**", "anon");
         filterChainDefinitionMapping.put("/**", "user");
+
         shiroFilter.setFilterChainDefinitionMap(filterChainDefinitionMapping);
-        shiroFilter.setSecurityManager(securityManager());
+
         Map<String, Filter> filters = new HashMap<String, Filter>();
         filters.put("anon", new AnonymousFilter());
         filters.put("authc", new FormAuthenticationFilter());
@@ -65,9 +79,6 @@ public class ShiroConfig {
 
         return shiroFilter;
     }
-
-
-
 
 
     @Bean

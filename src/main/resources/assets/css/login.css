@@ -11,3 +11,7 @@
     width: 240px;
     margin-top: 10px;
 }
+
+.errorMsg {
+    color : #dd0000;
+}
