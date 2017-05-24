@@ -34,9 +34,9 @@ public class ShiroConfig {
     private static Logger logger = LoggerFactory.getLogger(ShiroConfig.class);
 
     /**
-     * Shiro的Web过滤器Factory 命名:shiroFilter<br />
-     * *  @param securityManager
-     * * @return
+     * ShiroFilterFactoryBean 处理拦截资源文件问题。
+     * 注意：单独一个ShiroFilterFactoryBean配置是或报错的，以为在
+     * 初始化ShiroFilterFactoryBean的时候需要注入：SecurityManager
      */
     @Bean(name = "shiroFilter")
     public ShiroFilterFactoryBean shiroFilter() {
@@ -44,29 +44,22 @@ public class ShiroConfig {
         ShiroFilterFactoryBean shiroFilter = new ShiroFilterFactoryBean();
         //Shiro的核心安全接口,这个属性是必须的
         shiroFilter.setSecurityManager(securityManager());
-        /*要求登录时的链接(可根据项目的URL进行替换),非必须的属性,默认会自动寻找Web工程根目录下的"/login.jsp"页面*/
-        shiroFilter.setLoginUrl("/login");
-        /*登录成功页面*/
-        shiroFilter.setSuccessUrl("/index");
-        /*无权限转页面*/
-        shiroFilter.setUnauthorizedUrl("/forbidden");
+        shiroFilter.setLoginUrl("/login");                 /*要求登录时的链接(可根据项目的URL进行替换),非必须的属性,默认会自动寻找Web工程根目录下的"/login.jsp"页面*/
+        shiroFilter.setSuccessUrl("/index");               /*登录成功页面*/
+        shiroFilter.setUnauthorizedUrl("/forbidden");      /*无权限转页面*/
 
-        /*定义shiro过滤链 Map结构 * Map中key(xml中是指value值)的第一个'/'代表
-        的路径是相对于HttpServletRequest.getContextPath()的值来的
-        *anon：它对应的过滤器里面是空的,什么都没做,这里.do和.jsp后面的*表示参数,比方说login.jsp?main这种
-        * authc：该过滤器下的页面必须验证后才能访问,它是Shiro内置的一个拦截器org.apache.shiro.web.filter.authc.FormAuthenticationFilter */
+        /*定义shiro过滤链 Map结构 * Map中key(xml中是指value值)的第一个'/'代表的路径是相对于HttpServletRequest.getContextPath()的值来的*/
         Map<String, String> filterChainDefinitionMapping = new HashMap<String, String>();
+        /*anon 静态资源，匿名访问*/
         filterChainDefinitionMapping.put("/favicon.ico", "anon");
         filterChainDefinitionMapping.put("/forbidden", "anon");
         filterChainDefinitionMapping.put("/assets/**", "anon");
         filterChainDefinitionMapping.put("/webjars/**", "anon");
         filterChainDefinitionMapping.put("/v2/api-docs", "anon");
 
-        filterChainDefinitionMapping.put("/login", "authc");
-        filterChainDefinitionMapping.put("/logout", "logout");
-        filterChainDefinitionMapping.put("/mislogin", "anon");
-//        filterChainDefinitionMapping.put("/**", "anon");
-        filterChainDefinitionMapping.put("/**", "user");
+        filterChainDefinitionMapping.put("/login", "authc");  //需要认证
+        filterChainDefinitionMapping.put("/logout", "logout");  //退出登录，返回登录页面
+        filterChainDefinitionMapping.put("/**", "user");   //判断登陆状态
 
         shiroFilter.setFilterChainDefinitionMap(filterChainDefinitionMapping);
 
@@ -94,13 +87,18 @@ public class ShiroConfig {
         rememberMeManager.setCookie(simpleCookie);
         return rememberMeManager;
     }
+
+    /*指定名字，防止与spring cache 冲突*/
     @Bean(name = "shiroCacheManager")
     public CacheManager cacheManager() {
         return new MemoryConstrainedCacheManager();
     }
+
+
     @Bean(name = "securityManager")
     public org.apache.shiro.mgt.SecurityManager securityManager() {
         DefaultWebSecurityManager securityManager = new DefaultWebSecurityManager();
+        //注入缓存管理器;
         securityManager.setCacheManager(cacheManager());
         securityManager.setRealm(realm());
         securityManager.setRememberMeManager(rememberMeManager());
@@ -114,16 +112,22 @@ public class ShiroConfig {
     @DependsOn("lifecycleBeanPostProcessor")
     public ShiroRealm realm() {
         ShiroRealm realm = new ShiroRealm();
-//        realm.setCredentialsMatcher(new HashedCredentialsMatcher(Md5Hash.ALGORITHM_NAME));
+//      Md5加密
+//      realm.setCredentialsMatcher(new HashedCredentialsMatcher(Md5Hash.ALGORITHM_NAME));
         return realm;
     }
 
 
+    /*shiro生命周期处理器*/
     @Bean
     public LifecycleBeanPostProcessor lifecycleBeanPostProcessor() {
         return new LifecycleBeanPostProcessor();
     }
 
+
+    /*开启Shiro的注解(如@RequiresRoles,@RequiresPermissions),
+    需借助SpringAOP扫描使用Shiro注解的类,并在必要时进行安全逻辑验证
+    * 配置以下两个bean(DefaultAdvisorAutoProxyCreator(可选)和AuthorizationAttributeSourceAdvisor)即可实现此功能*/
     @Bean
     @DependsOn("lifecycleBeanPostProcessor")
     public DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator() {

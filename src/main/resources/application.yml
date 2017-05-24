@@ -17,10 +17,10 @@ spring:
       password: fengtangzheng
       driver-class-name: oracle.jdbc.driver.OracleDriver
 
-#    mvc:
-#      view:
-#        suffix: .vm
-#        prefix: classpath:/templates/
+    mvc:
+      view:
+        suffix: .vm
+        prefix: classpath:/templates/
 
     thymeleaf:
       cache: false
