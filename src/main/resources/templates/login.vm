@@ -9,7 +9,7 @@
     <div class="login-panel">
         <form id="loginForm" action="/login" method="post">
             <div class="errorMsg">$!{errorMsg}</div>
-            <input type="text" name="username" value="" placeholder="账号"/>
+            <input type="text" name="userName" value="" placeholder="账号"/>
             <input type="password" name="password" value="" placeholder="密码"/>
             <input type="button" class="btn btn-primary btn-sm" id="signIn" value="登录"/>
         </form>

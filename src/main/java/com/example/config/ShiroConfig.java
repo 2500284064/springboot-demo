@@ -144,4 +144,13 @@ public class ShiroConfig {
         return aasa;
     }
 
+    @Bean
+    /*设置基于表单的身份验证过滤器*/
+    public FormAuthenticationFilter formAuthenticationFilter(){
+        FormAuthenticationFilter filter = new FormAuthenticationFilter();
+        filter.setUsernameParam("userName");
+        filter.setPasswordParam("password");
+        return filter;
+    }
+
 }
