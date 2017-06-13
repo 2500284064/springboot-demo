@@ -2,10 +2,8 @@ package com.example.config;
 
 import com.example.shiro.ShiroRealm;
 import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.cache.CacheManager;
 import org.apache.shiro.cache.MemoryConstrainedCacheManager;
-import org.apache.shiro.crypto.hash.Md5Hash;
 import org.apache.shiro.mgt.RememberMeManager;
 import org.apache.shiro.spring.LifecycleBeanPostProcessor;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
@@ -148,8 +146,10 @@ public class ShiroConfig {
     /*设置基于表单的身份验证过滤器*/
     public FormAuthenticationFilter formAuthenticationFilter(){
         FormAuthenticationFilter filter = new FormAuthenticationFilter();
+        filter.setFailureKeyAttribute("shiroLoginFailure");
         filter.setUsernameParam("userName");
         filter.setPasswordParam("password");
+        filter.setRememberMeParam("rememberMe");
         return filter;
     }
 

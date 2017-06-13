@@ -1,0 +1,47 @@
+server:
+    port: 8001
+    session:
+      timeout: 6000 #second
+
+spring:
+    aop:
+      auto: true
+      proxy-target-class: true
+
+#      配置datasource
+    datasource:
+      url: jdbc:oracle:thin:@localhost:1521:orcl
+      username: springbootdemo
+      password: fengtangzheng
+      driver-class-name: oracle.jdbc.driver.OracleDriver
+
+    mvc:
+      view:
+        suffix: .vm
+        prefix: classpath:/templates/
+
+    thymeleaf:
+      cache: false
+      prefix: classpath:/templates/
+      suffix: .html
+      mode: HTML5
+      excluded-view-names:
+      encoding: UTF-8
+      enabled: true
+      content-type: text/html
+      check-template-location: true
+
+    velocity:
+      cache: false
+      charset: UTF-8
+      expose-spring-macro-helpers: true
+      properties:
+        velocimacro.library: macro/macro.vm
+        velocimacro.library.autoreload: true
+      resource-loader-path: classpath:/templates/
+      suffix: .vm
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.db.entity
+  config-location: classpath:mybatis-config.xml
