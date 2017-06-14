@@ -17,14 +17,9 @@ spring:
       password: fengtangzheng
       driver-class-name: oracle.jdbc.driver.OracleDriver
 
-    mvc:
-      view:
-        suffix: .vm
-        prefix: classpath:/templates/
-
     thymeleaf:
       cache: false
-      prefix: classpath:/templates/
+      prefix: classpath:/templates/thymeleaf/
       suffix: .html
       mode: HTML5
       excluded-view-names:
@@ -40,8 +35,16 @@ spring:
       properties:
         velocimacro.library: macro/macro.vm
         velocimacro.library.autoreload: true
-      resource-loader-path: classpath:/templates/
+      resource-loader-path: classpath:/templates/velocity/
       suffix: .vm
+
+    freemarker:
+      cache: false
+      charset: UTF-8
+      enabled: true
+      expose-request-attributes: true
+      suffix: .ftl
+      template-loader-path: classpath:/templates/freemarker/
 
     devtools:
       restart:
@@ -50,8 +53,6 @@ spring:
         trigger-file: classpath:/restart-trigger.xml
       livereload:
         enabled: false
-    batch:
-      table-prefix:
 
 #        自定义banner
 banner:
@@ -63,6 +64,9 @@ mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.example.db.entity
   config-location: classpath:mybatis-config.xml
+
+logging:
+  config: classpath:log-config.xml
 
 innercount:
   username: "ftz"

@@ -46,6 +46,13 @@
             <version>1.4.0.RELEASE</version>
         </dependency>
 
+        <!--freemarker-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+            <version>1.5.2.RELEASE</version>
+        </dependency>
+
 
         <!--oracle-->
         <!--连接oracle必要依赖-->

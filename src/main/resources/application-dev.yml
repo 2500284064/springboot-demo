@@ -38,10 +38,14 @@ spring:
       properties:
         velocimacro.library: macro/macro.vm
         velocimacro.library.autoreload: true
-      resource-loader-path: classpath:/templates/
+      resource-loader-path: classpath:/templates/velocity/
       suffix: .vm
+
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.example.db.entity
   config-location: classpath:mybatis-config.xml
+
+logging:
+  config: classpath:log-config.xml

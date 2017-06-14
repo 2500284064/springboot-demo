@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 public class MybatisMapperScanConfig {
 
     @Bean
-    public MapperScannerConfigurer mapperScannerConfigurer(){
+    public static MapperScannerConfigurer mapperScannerConfigurer(){
         MapperScannerConfigurer mapperScanner = new MapperScannerConfigurer();
         mapperScanner.setBasePackage("com.example.db.mapper");
         return mapperScanner;
