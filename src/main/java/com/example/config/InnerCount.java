@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix = "innercount")
 public class InnerCount {
 
-    private User innerUser;
+//    private User innerUser;
     private String username;
     private String password;
 
@@ -33,14 +33,14 @@ public class InnerCount {
         this.password = password;
     }
 
-    public User getInnerUser() {
-        innerUser = new User();
-        innerUser.setUserName(this.getUsername());
-        innerUser.setPassword(this.getPassword());
-        return innerUser;
-    }
-
-    public void setInnerUser(User innerUser) {
-        this.innerUser = innerUser;
-    }
+//    public User getInnerUser() {
+//        innerUser = new User();
+//        innerUser.setUserName(this.getUsername());
+//        innerUser.setPassword(this.getPassword());
+//        return innerUser;
+//    }
+//
+//    public void setInnerUser(User innerUser) {
+//        this.innerUser = innerUser;
+//    }
 }
