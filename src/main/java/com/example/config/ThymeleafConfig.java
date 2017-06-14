@@ -12,6 +12,7 @@ public class ThymeleafConfig {
     @Bean(name = "thymeleafResolver")
     public ThymeleafViewResolver thymeleafViewResolver(){
         ThymeleafViewResolver resolver = new ThymeleafViewResolver();
+        resolver.setOrder(3);
         return resolver;
     }
 }

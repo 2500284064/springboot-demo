@@ -22,11 +22,6 @@ public class IndexController {
         return "login";
     }
 
-/*    @RequestMapping(value = "/loginBak", method = RequestMethod.GET)
-    public String loginBak(){
-        return "redirect:/login";
-    }*/
-
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String index(){
         return "index";

@@ -1,33 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="908a15b5-00fd-4071-8056-0af0d9e07efa" name="Default" comment="test环境任意账号登录暂时停止">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_25_incubating.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_1_5_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/example/config/FreeMarkerConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/example/config/WebMvcConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/velocity/error.vm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/velocity/layout/empty.vm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/velocity/macro/macro.vm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/templates/error.vm" afterPath="" />
+    <list default="true" id="908a15b5-00fd-4071-8056-0af0d9e07efa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myproject.iml" afterPath="$PROJECT_DIR$/myproject.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/config/MybatisMapperScanConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/config/MybatisMapperScanConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/config/FreeMarkerConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/config/FreeMarkerConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/config/ThymeleafConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/config/ThymeleafConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/config/VelocityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/config/VelocityConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/controller/IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/controller/IndexController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application-test.yml" afterPath="$PROJECT_DIR$/src/main/resources/application-test.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/templates/common/footer.vm" afterPath="$PROJECT_DIR$/src/main/resources/templates/velocity/common/footer.vm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/templates/common/header.vm" afterPath="$PROJECT_DIR$/src/main/resources/templates/velocity/common/header.vm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/templates/index.vm" afterPath="$PROJECT_DIR$/src/main/resources/templates/velocity/index.vm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/default.vm" afterPath="$PROJECT_DIR$/src/main/resources/templates/velocity/layout/default.vm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/empty.vm" afterPath="$PROJECT_DIR$/src/main/resources/templates/freemarker/index.ftl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/thymeleaf/login.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/templates/login.vm" afterPath="$PROJECT_DIR$/src/main/resources/templates/velocity/login.vm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/templates/macro/macro.vm" afterPath="$PROJECT_DIR$/src/main/resources/log-config.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/templates/thymeleafIndex.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/thymeleaf/thymeleafIndex.html" />
     </list>
     <list id="831b69ba-c127-4946-9b36-f4a31b5a64dd" name="nocommit" comment="nocommit">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
@@ -63,50 +42,7 @@
     <favorites_list name="myproject" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/controller/IndexController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application-test.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application-test.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MybatisMapperScanConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/config/MybatisMapperScanConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.vm" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/velocity/login.vm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -131,7 +67,6 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/94f07375-b789-4cf7-96e2-a16cc8fa87f9/console_1.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/db/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/config/ThymeleafConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/common/footer.vm" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/css/layout.css" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/css/main.css" />
@@ -167,18 +102,19 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/error.vm" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/layout/empty.vm" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/controller/IndexController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/config/VelocityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/velocity/error.vm" />
         <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/velocity/layout/default.vm" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/config/WebMvcConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/config/FreeMarkerConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application-test.yml" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/freemarker/index.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/config/MybatisMapperScanConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/velocity/login.vm" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/config/VelocityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/config/ThymeleafConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/config/FreeMarkerConfig.java" />
       </list>
     </option>
   </component>
@@ -343,7 +279,75 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="macro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-boot-velocity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="velocity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-boot-velocity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="velocity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -594,7 +598,7 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/application-test.yml&#10;pom&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/pom.xml&#10;Shiro&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/java/com/example/config/ShiroConfig.java&#10;application&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/application.yml&#10;Index&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/java/com/example/controller/IndexController.java&#10;app&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/application.yml&#10;tes&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/application-test.yml&#10;defa&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/templates/layout/default.vm&#10;login.vm&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/templates/login.vm&#10;pom.xm&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/pom.xml&#10;S&#9;ACTION&#9;ActivateSpringToolWindow&#10;login&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/templates/login.vm&#10;index&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/templates/index.vm&#10;ShiroRea&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/java/com/example/shiro/ShiroRealm.java&#10;IndexC&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/java/com/example/controller/IndexController.java&#10;header&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/templates/common/header.vm&#10;def&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/templates/layout/default.vm&#10;login.&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/assets/css/login.css&#10;RightM&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/mapper/RightMapper.xml&#10;RoleMap&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/mapper/RoleMapper.xml&#10;RoleMapper&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/mapper/RoleMapper.xml&#10;User&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/java/com/example/service/UserService.java&#10;Ve&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/java/com/example/config/VelocityConfig.java&#10;My&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/java/com/example/config/MybatisMapperScanConfig.java&#10;Inde&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/java/com/example/controller/IndexController.java&#10;inde&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/java/com/example/controller/IndexController.java" />
+    <property name="SearchEverywhereHistoryKey" value="Free&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/java/com/example/config/FreeMarkerConfig.java&#10;Index&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/java/com/example/controller/IndexController.java&#10;pom&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/pom.xml&#10;Shiro&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/java/com/example/config/ShiroConfig.java&#10;application&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/application.yml&#10;app&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/application.yml&#10;tes&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/application-test.yml&#10;defa&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/templates/layout/default.vm&#10;login.vm&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/templates/login.vm&#10;pom.xm&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/pom.xml&#10;S&#9;ACTION&#9;ActivateSpringToolWindow&#10;login&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/templates/login.vm&#10;index&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/templates/index.vm&#10;ShiroRea&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/java/com/example/shiro/ShiroRealm.java&#10;IndexC&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/java/com/example/controller/IndexController.java&#10;header&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/templates/common/header.vm&#10;def&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/templates/layout/default.vm&#10;login.&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/assets/css/login.css&#10;RightM&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/mapper/RightMapper.xml&#10;RoleMap&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/mapper/RoleMapper.xml&#10;RoleMapper&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/resources/mapper/RoleMapper.xml&#10;User&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/java/com/example/service/UserService.java&#10;Ve&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/java/com/example/config/VelocityConfig.java&#10;My&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/java/com/example/config/MybatisMapperScanConfig.java&#10;Inde&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/java/com/example/controller/IndexController.java&#10;inde&#9;FILE&#9;file://E:/studyself/git/spring-boot-velocity/src/main/java/com/example/controller/IndexController.java" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="DDL Data Source&#10;Oracle" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
@@ -1083,7 +1087,7 @@
       <workItem from="1496279440499" duration="8482000" />
       <workItem from="1496834338799" duration="1298000" />
       <workItem from="1497335392739" duration="17845000" />
-      <workItem from="1497402185957" duration="15199000" />
+      <workItem from="1497402185957" duration="16233000" />
     </task>
     <task id="LOCAL-00001" summary="集成thymeleaf模板引擎，&#10;目前测试结果为velocity优先级高于thymeleaf模板">
       <created>1495108588232</created>
@@ -1176,15 +1180,22 @@
       <option name="project" value="LOCAL" />
       <updated>1497405092749</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="1、日志输出配置&#10;2、freemarker尝试&#10;3、多模板引擎同时配置">
+      <created>1497424076225</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1497424076225</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145823000" />
+    <option name="totallyTimeSpent" value="146857000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1196,7 +1207,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36471862" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31926408" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1204,7 +1215,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2875368" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875368" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38419914" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20670995" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34632036" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19206008" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1242,7 +1253,8 @@
     <MESSAGE value="shiro可配置登录form的参数和提交路径" />
     <MESSAGE value="1、新增profile配置&#10;2、添加Application事件监听器&#10;3、新增访问应用参数&#10;4、test环境任意账号登录（在做）" />
     <MESSAGE value="test环境任意账号登录暂时停止" />
-    <option name="LAST_COMMIT_MESSAGE" value="test环境任意账号登录暂时停止" />
+    <MESSAGE value="1、日志输出配置&#10;2、freemarker尝试&#10;3、多模板引擎同时配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、日志输出配置&#10;2、freemarker尝试&#10;3、多模板引擎同时配置" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1541,14 +1553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/config/ThymeleafConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/velocity/error.vm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1561,14 +1565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
           <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/config/VelocityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -1626,17 +1622,7 @@
         <state relative-caret-position="275">
           <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/config/FreeMarkerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1649,26 +1635,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/freemarker/index.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-test.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -1681,13 +1651,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-test.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/velocity/login.vm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="125">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/config/ThymeleafConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/config/VelocityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/config/FreeMarkerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-400">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

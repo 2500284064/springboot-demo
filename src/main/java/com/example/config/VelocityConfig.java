@@ -18,6 +18,7 @@ public class VelocityConfig {
         VelocityLayoutViewResolver resolver = new VelocityLayoutViewResolver();
         properties.applyToViewResolver(resolver);
         resolver.setLayoutUrl("layout/default.vm");
+        resolver.setOrder(2);
         return resolver;
     }
 

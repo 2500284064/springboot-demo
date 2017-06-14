@@ -13,6 +13,7 @@ public class FreeMarkerConfig {
     @Bean(name = "freeMarkerResolver")
     public FreeMarkerViewResolver freeMarkerViewResolver(){
         FreeMarkerViewResolver viewResolver = new FreeMarkerViewResolver();
+        viewResolver.setOrder(4);
         return viewResolver;
     }
 }
