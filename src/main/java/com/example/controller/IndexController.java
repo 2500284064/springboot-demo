@@ -1,7 +1,9 @@
 package com.example.controller;
 
 import org.apache.catalina.servlet4preview.http.HttpServletRequest;
+import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.web.filter.authc.FormAuthenticationFilter;
+import org.apache.shiro.web.util.WebUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -17,17 +19,31 @@ public class IndexController {
 
     private static Logger logger = LoggerFactory.getLogger(IndexController.class);
 
+//    @RequestMapping(value = "/login", method = RequestMethod.GET)
+//    public String login(){
+//        return "login";
+//    }
+
     @RequestMapping(value = "/login", method = RequestMethod.GET)
-    public String login(){
-        return "login";
+    public String login( javax.servlet.http.HttpServletRequest request) {
+        WebUtils.getAndClearSavedRequest(request);
+        if(SecurityUtils.getSubject().isAuthenticated()) {
+            return "redirect:/index";
+        }
+        return "/login";
     }
 
-    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    @RequestMapping(value = "/")
+    public String root(){
+        return "redirect:/index";
+    }
+
+    @RequestMapping(value = "/index")
     public String index(){
         return "index";
     }
 
-    @RequestMapping(value = "/thymeleaf", method = RequestMethod.GET)
+    @RequestMapping(value = "/thymeleaf")
     public String thymeleaf(){
         return "thymeleafIndex";
     }

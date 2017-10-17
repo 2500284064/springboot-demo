@@ -9,7 +9,14 @@
         </encoder>
     </appender>
     <appender name="TOFILE" class="ch.qos.logback.core.FileAppender">
-        <file>../logs/${Now}.log</file>
+        <file>logs/${Now}.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%10thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="ERRORLOG" class="ch.qos.logback.core.FileAppender">
+        <file>logs/${Now}_error.log</file>
         <append>true</append>
         <encoder>
             <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%10thread] %-5level %logger{36} - %msg%n</pattern>
@@ -26,5 +33,9 @@
     </logger>
     <logger name="org.springframework" level="WARN">
         <appender-ref ref="TOFILE"/>
+    </logger>
+
+    <logger name="errorLogger" level="ERROR">
+        <appender-ref ref="ERRORLOG"/>
     </logger>
 </configuration>

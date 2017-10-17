@@ -10,10 +10,11 @@ spring:
 
 #      配置datasource
     datasource:
-      url: jdbc:oracle:thin:@localhost:1521:orcl
-      username: springbootdemo
+      url: jdbc:mysql://101.132.134.64:3306/ftz_home?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useUnicode=true&useSSL=false&autoReconnect=true
+      username: fengtangzheng
       password: fengtangzheng
-      driver-class-name: oracle.jdbc.driver.OracleDriver
+#      driver-class-name: oracle.jdbc.driver.OracleDriver
+      driver-class-name: com.mysql.jdbc.Driver
 
     mvc:
       view:
