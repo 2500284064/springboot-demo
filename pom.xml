@@ -6,6 +6,7 @@
     <groupId>com.example</groupId>
     <artifactId>myproject</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
 
     <!--spring-boot-starter-parent 采取保守策略，可以修改为最新的jdk-->
     <properties>
@@ -25,6 +26,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
         </dependency>
 
         <!--缓存-->
@@ -127,14 +133,11 @@
     </dependencies>
 
     <build>
+        <finalName>my</finalName>
         <plugins>
-            <!--编译插件，打包成可执行jar-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <fork>true</fork>
-                </configuration>
                 <version>1.4.0.RELEASE</version>
                 <executions>
                     <execution>
@@ -144,6 +147,39 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.0.1</version>
+                <configuration>
+                    <nonFilteredFileExtensions>
+                        <nonFilteredFileExtension>exe</nonFilteredFileExtension>
+                        <nonFilteredFileExtension>woff</nonFilteredFileExtension>
+                        <nonFilteredFileExtension>eot</nonFilteredFileExtension>
+                        <nonFilteredFileExtension>ttf</nonFilteredFileExtension>
+                        <nonFilteredFileExtension>svg</nonFilteredFileExtension>
+                    </nonFilteredFileExtensions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.0</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+
             <!--fingbugs-->
             <!--<plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -152,7 +188,7 @@
                 <configuration>
                     <effort>Default</effort>
                     <threshold>Low</threshold>
-                    <classFilesDirectory>E:\studyself\git\spring-boot-velocity\target\classes\com\example</classFilesDirectory>
+                    &lt;!&ndash;<classFilesDirectory>E:\studyself\git\spring-boot-velocity\target\classes\com\example</classFilesDirectory>&ndash;&gt;
                 </configuration>
                 <executions>
                     <execution>

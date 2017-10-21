@@ -4,6 +4,7 @@ import com.example.event.appListenner.AppListenner;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -17,7 +18,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 //@MapperScan(value = "com.example.db.mapper")        此注解被MapperScannerConfig类替代
 @EnableTransactionManagement(proxyTargetClass = true)  //支持事务管理
 @EnableCaching(proxyTargetClass = true)
-public class ApiStarter {
+
+/* 务必继承SpringBootServletInitializer, 否则打的war包在tomcat中无法启动 */
+public class ApiStarter extends SpringBootServletInitializer {
 
     public static void main(String[] args) throws Exception {
         System.setProperty("spring.devtools.restart.enabled", "true");
