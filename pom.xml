@@ -133,7 +133,7 @@
     </dependencies>
 
     <build>
-        <finalName>my</finalName>
+        <finalName>home</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
