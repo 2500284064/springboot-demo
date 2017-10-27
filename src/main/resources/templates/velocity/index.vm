@@ -18,12 +18,15 @@
     .bg-box-4{
         background: url('/assets/images/home/4.jpg') no-repeat center/cover;
     }
+    .bg-box-5{
+        background: url('/assets/images/home/5.jpg') no-repeat center/cover;
+    }
     #wrap{
         position: absolute;
         overflow: hidden;
         top:0; left:0; right:0; bottom:0;
         margin:auto;
-        width: 1000px;
+        width: 1100px;
         height: 400px;
     }
     #wrap > ul{
@@ -46,8 +49,11 @@
     #wrap > ul > li:nth-child(3){
         background: url('/assets/images/home/3.jpg') no-repeat center/cover;
     }
-    #wrap > ul > li:nth-child(4){
+    #wrap > ul > li:nth-child(4) {
         background: url('/assets/images/home/4.jpg') no-repeat center/cover;
+    }
+    #wrap > ul > li:nth-child(5){
+        background: url('/assets/images/home/5.jpg') no-repeat center/cover;
         width: 700px;
     }
     #wrap > ul > li > .text{
@@ -65,6 +71,9 @@
 <script>
     $(function () {
         $(".page-content").height($(window).height() - 110);
+
+//        $('.bg').fadeOut(300);
+//        $('.bg:eq(0)').fadeIn(500);
 
         $('#wrap li').on('mouseover', function(){
             if(!$(this).hasClass('curr')){
@@ -94,6 +103,7 @@
     <div class="bg bg-box-2"></div>
     <div class="bg bg-box-3"></div>
     <div class="bg bg-box-4"></div>
+    <div class="bg bg-box-5"></div>
     <div id="wrap">
         <ul>
             <li>
@@ -111,9 +121,14 @@
                     <p>尼尔机械纪元3</p>
                 </div>
             </li>
-            <li class="curr">
+            <li>
                 <div class="text">
                     <p>尼尔机械纪元4</p>
+                </div>
+            </li>
+            <li class="curr">
+                <div class="text">
+                    <p>团子</p>
                 </div>
             </li>
         </ul>
