@@ -1,3 +1,17 @@
 <div class="navi">
-##    <h3>hello! welcome!</h3>
+    <div class="logo-box">
+        Miooooo.com
+    </div>
+    <div class="menu-box">
+        <ul>
+            <li><i class="fa fa-home" aria-hidden="true"></i><a href="/index">Home</a></li>
+            <li><i class="fa fa-user" aria-hidden="true"></i><a href="#">About Us</a></li>
+        </ul>
+    </div>
+    <div class="login-box">
+        <ul>
+            <li><i class="fa fa-user-circle-o" aria-hidden="true"></i><a href="">fengtangzheng</a></li>
+            <li><i class="fa fa-power-off" aria-hidden="true"></i><a href="#springUrl('/logout')">logout</a></li>
+        </ul>
+    </div>
 </div>

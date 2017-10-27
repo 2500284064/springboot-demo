@@ -1,3 +1,9 @@
+#set($layout="/layout/empty.vm")
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/assets/css/login.css" />
+
+<script src="/assets/js/jquery.2.1.1.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
 <script>
     $(function () {
         $("#signIn").on("click", function () {
@@ -5,7 +11,7 @@
         })
     })
 </script>
-<div class="page-content" style="background-image: url('/assets/images/earth-banner.jpg'); background-repeat: no-repeat; height: 415px">
+<div class="page-content">
     <div class="login-panel">
         <form id="loginForm" action="/login" method="post">
             <div class="errorMsg">$!{errorMsg}</div>

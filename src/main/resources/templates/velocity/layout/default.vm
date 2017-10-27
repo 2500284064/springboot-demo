@@ -12,11 +12,25 @@
 
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/assets/css/layout.css" />
-    <link rel="stylesheet" href="/assets/css/login.css" />
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
 
     <script src="/assets/js/jquery.2.1.1.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
     <script src="/assets/js/common.js"></script>
+    <script>
+        var screen_height = 768;
+        var min_main_container_height = 658;
+        $(function () {
+            /* 设置内容最低高度 */
+            {
+                screen_height = $(window).height();
+                min_main_container_height = screen_height - 110;
+                if($(".main-container").height() < min_main_container_height){
+                    $(".main-container").height(min_main_container_height);
+                }
+            }
+        })
+    </script>
 </head>
 
 <body>

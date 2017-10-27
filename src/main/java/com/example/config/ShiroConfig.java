@@ -57,7 +57,8 @@ public class ShiroConfig {
 
         filterChainDefinitionMapping.put("/login", "authc");  //需要认证
         filterChainDefinitionMapping.put("/logout", "logout");  //退出登录，返回登录页面
-        filterChainDefinitionMapping.put("/**", "user");   //判断登陆状态
+//        filterChainDefinitionMapping.put("/**", "user");   //判断登陆状态
+        filterChainDefinitionMapping.put("/**", "anon");   //判断登陆状态
 
         shiroFilter.setFilterChainDefinitionMap(filterChainDefinitionMapping);
 

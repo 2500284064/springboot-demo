@@ -1,2 +1,4 @@
-hello, this is the home page
-<a href="/logout">退出登录</a>
+<div class="page-content" style="height: 200px; line-height: 200px">
+    hello, this is the home page
+    <a href="/logout">退出登录</a>
+</div>
