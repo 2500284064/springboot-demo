@@ -1,2 +1,1 @@
-#set($layout="/layout/empty.vm")
-hello, this is the error page.
+error page

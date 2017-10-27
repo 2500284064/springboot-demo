@@ -78,6 +78,7 @@ i.fa {
 }
 
 .page-content {
+    position: relative;
     margin: auto;
     width: 100%;
 }
