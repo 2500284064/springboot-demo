@@ -3,16 +3,16 @@
         Miooooo.com
     </div>
     <div class="menu-box">
-        <ul>
-            <li><i class="fa fa-home" aria-hidden="true"></i><a href="/index">Home</a></li>
-            <li><i class="fa fa-user" aria-hidden="true"></i><a href="#">About Us</a></li>
-            <li><i class="fa fa-coffee" aria-hidden="true"></i><a href="#">Study Demo</a></li>
+        <ul class="menu-ul">
+            <li class="menu-item"><i class="fa fa-home" aria-hidden="true"></i><a href="/index">Home</a></li>
+            <li class="menu-item"><i class="fa fa-user" aria-hidden="true"></i><a href="/aboutUs/home">About Us</a></li>
+            <li class="menu-item"><i class="fa fa-coffee" aria-hidden="true"></i><a href="/studyDemo/home">Study Demo</a></li>
         </ul>
     </div>
     <div class="login-box">
-        <ul>
-            <li><i class="fa fa-user-circle-o" aria-hidden="true"></i><a href="">fengtangzheng</a></li>
-            <li><i class="fa fa-power-off" aria-hidden="true"></i><a href="#springUrl('/logout')">logout</a></li>
+        <ul class="menu-ul">
+            <li class="menu-item"><i class="fa fa-user-circle-o" aria-hidden="true"></i><a href="">fengtangzheng</a></li>
+            <li class="menu-item"><i class="fa fa-power-off" aria-hidden="true"></i><a href="#springUrl('/logout')">logout</a></li>
         </ul>
     </div>
 </div>

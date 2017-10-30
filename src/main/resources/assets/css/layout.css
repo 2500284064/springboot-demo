@@ -1,3 +1,6 @@
+/*
+* 整个站点宏观的布局样式
+*/
 body {
     position: relative;
     width: 100%;
@@ -6,6 +9,7 @@ body {
 
 ul {
     list-style: none;
+    padding: 0px;
 }
 
 li {
@@ -24,6 +28,10 @@ i.fa {
     float: left;
 }
 
+
+/**
+* 头部导航菜单样式
+*/
 .navi {
     height: 50px;
     width: 100%;
@@ -48,37 +56,81 @@ i.fa {
     float: right;
 }
 
-.navi ul {
-    margin-bottom: 0px;
-    float: left;
+.navi ul.menu-ul {
+    height: 50px;
 }
 
-.navi ul li {
-    display: inline-block;
+.navi ul.menu-ul li.menu-item {
     float: left;
-    padding: 0px 20px;
     line-height: 50px;
 }
 
-.navi ul li:hover {
+/* 菜单样式 */
+.menu-ul {
+    margin-bottom: 0px;
+}
+
+.menu-ul .menu-item {
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.menu-ul .menu-item.active {
     background-color: #e5e5e5;
 }
 
-.navi ul li a {
+.menu-ul .menu-item a {
     color: #222222;
     text-decoration: none;
 }
 
+.menu-ul .menu-item:hover {
+    cursor: pointer;
+    background-color: #e5e5e5;
+}
+
+/*
+* 左侧菜单样式
+*/
+
+.left-menu {
+    width: 250px;
+    padding: 20px 0px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #cccccc;
+}
+
+.left-menu .menu-title {
+    height: 50px;
+    line-height:50px;
+    text-align: center;
+}
+
+.left-menu .menu-title:hover {
+    cursor: pointer;
+    background-color: #e5e5e5;
+}
+
+.left-menu .menu-item {
+    height: 40px;
+    line-height: 40px;
+}
+
+
+/* 内容样式 */
+.page-content {
+    position: relative;
+    margin: auto;
+    padding: 20px 30px;
+    width: 100%;
+}
+
+/* 页脚样式 */
 .footer {
     height: 60px;
     width: 100%;
     background-color: #f5f5f5;
     line-height: 60px;
     text-align: center;
-}
-
-.page-content {
-    position: relative;
-    margin: auto;
-    width: 100%;
 }

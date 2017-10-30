@@ -1,0 +1,9 @@
+<div class="left-menu">
+    <div class="menu-title">Shiro Demo</div>
+    <ul class="menu-ul">
+        <li class="menu-item"><a href="#"></a>个人中心</li>
+        <li class="menu-item"><a href="#"></a>权限管理</li>
+        <li class="menu-item"><a href="#"></a>角色管理</li>
+        <li class="menu-item"><a href="#"></a>用户管理</li>
+    </ul>
+</div>
