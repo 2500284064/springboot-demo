@@ -1,3 +1,11 @@
+<script>
+    $(function () {
+        $(".content-box").tablePlugin('init', {id: '31231'});
+    })
+</script>
 <div class="page-content">
     #parse("/studyDemo/common/leftMenu.vm")
+    <div class="content-box">
+        home
+    </div>
 </div>

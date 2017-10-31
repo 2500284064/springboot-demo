@@ -12,10 +12,12 @@
 
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/css/table.css" />
     <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
 
     <script src="/assets/js/jquery.2.1.1.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/table.js"></script>
     <script src="/assets/js/common.js"></script>
     <script>
         var screen_height = 768;
@@ -29,6 +31,11 @@
                     $(".main-container").height(min_main_container_height);
                 }
             }
+
+            $(".menu-ul .menu-item").on('click', function () {
+                var url = $(this).find("a").attr("href");
+                window.location.href = url;
+            })
         })
     </script>
 </head>

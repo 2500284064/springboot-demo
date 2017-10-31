@@ -1,0 +1,22 @@
+.table-box {
+    position: relative;
+}
+
+.table-box thead {
+    background-color: #cccccc;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.table-box thead tr{
+    height: 44px;
+}
+
+.table-box tbody tr{
+    height: 36px;
+}
+
+.table-box table tr td{
+    vertical-align: middle;
+    text-align: center;
+}

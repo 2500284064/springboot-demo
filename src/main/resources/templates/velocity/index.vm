@@ -70,7 +70,7 @@
 </style>
 <script>
     $(function () {
-        $(".page-content").height($(window).height() - 110);
+        $(".page-content").height($(window).height() - 150);
 
 //        $('.bg').fadeOut(300);
 //        $('.bg:eq(0)').fadeIn(500);

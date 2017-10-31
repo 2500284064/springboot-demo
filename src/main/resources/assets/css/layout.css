@@ -94,6 +94,7 @@ i.fa {
 */
 
 .left-menu {
+    float: left;
     width: 250px;
     padding: 20px 0px;
     background-color: #f5f5f5;
@@ -124,6 +125,11 @@ i.fa {
     margin: auto;
     padding: 20px 30px;
     width: 100%;
+}
+
+.page-content .content-box {
+    margin-left: 260px;
+    padding: 20px;
 }
 
 /* 页脚样式 */
