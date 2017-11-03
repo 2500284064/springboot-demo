@@ -6,6 +6,9 @@ body {
     width: 100%;
     color: #222222;
 }
+div {
+    position: relative;
+}
 
 ul {
     list-style: none;

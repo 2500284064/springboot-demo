@@ -1,11 +1,12 @@
 <script>
     $(function () {
-        $(".content-box").tablePlugin('init', {id: '31231'});
+        $("#table").tablePlugin('init', {paginator: 'paginator'});
     })
 </script>
 <div class="page-content">
     #parse("/studyDemo/common/leftMenu.vm")
     <div class="content-box">
-        home
+        <div id="table"></div>
+        <div id="paginator"></div>
     </div>
 </div>

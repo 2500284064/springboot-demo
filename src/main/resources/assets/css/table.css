@@ -20,3 +20,23 @@
     vertical-align: middle;
     text-align: center;
 }
+
+.paginator {
+    float: right;
+}
+
+.paginator .page-icon {
+    display: inline-block;
+    margin: 0px 5px;
+    height: 20px;
+    line-height: 20px;
+    width: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #e5e5e5;
+}
+
+.paginator .page-icon.pre, .paginator .page-icon.next {
+    width: 60px;
+}
