@@ -1,4 +1,6 @@
-*/target/
+target/
 .idea/
-*.log
+log/
 *.iml
+node_modules/
+gulpfile.js
