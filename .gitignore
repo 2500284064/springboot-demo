@@ -1,6 +1,7 @@
 target/
 .idea/
-log/
+logs/
+test/
 *.iml
 node_modules/
 gulpfile.js
