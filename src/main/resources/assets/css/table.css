@@ -28,15 +28,29 @@
 .paginator .page-icon {
     display: inline-block;
     margin: 0px 5px;
+    padding: 0px 10px;
     height: 20px;
     line-height: 20px;
-    width: 20px;
     text-align: center;
     cursor: pointer;
     border-radius: 2px;
     background-color: #e5e5e5;
 }
 
-.paginator .page-icon.pre, .paginator .page-icon.next {
-    width: 60px;
+.paginator .page-icon.selected {
+    background-color: #f5f5f5;
+}
+
+.paginator .page-icon:hover {
+    background-color: #f5f5f5;
+}
+
+.paginator .page-icon.pre i {
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+.paginator .page-icon.next i {
+    margin-right: 0px;
+    margin-left: 10px;
 }
